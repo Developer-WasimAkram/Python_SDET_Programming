@@ -1,3 +1,4 @@
+
 def is_symmetrical(s):
     length=len(s)
     mid=length//2
