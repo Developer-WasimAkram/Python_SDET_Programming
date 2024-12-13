@@ -24,3 +24,13 @@ def string_length_inbuilt_count(string):
     return string.count("") -1
     
 print("Method_3: Length of string using inbuilt count  is ",string_length_inbuilt_count(s))
+
+
+#Method 4 Using enumerate function
+
+def string_length_enumerate(string):
+    s=0 
+    for i,c in enumerate(string):
+        s+=1
+    return s
+print("Method_4: Length of string using enumerate  is ",string_length_enumerate(s))
