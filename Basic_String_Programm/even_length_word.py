@@ -12,3 +12,6 @@ def print_even_length_words(string):
     
 string=  "This is a python language"
 print(print_even_length_words(string))
+
+#Time Complexity: O(n), where n is the length of the given string
+#Auxiliary Space: O(n)
