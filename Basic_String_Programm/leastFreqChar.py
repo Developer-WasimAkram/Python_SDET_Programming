@@ -13,5 +13,16 @@ def leastFrequncyChar(string):
            
     return min(char_count,key=char_count.get)
     
-string='bbcccddddeeeee'  
+string='abbcccddddeeeee'  
 print(leastFrequncyChar(string))
+
+
+#Method 2  Using Counter
+
+from collections import Counter
+
+def leastFrequncyChar_Counter(string):
+    char_count = Counter(string)
+    return char_count.most_common()[-1][0]
+
+print(leastFrequncyChar_Counter(string))
