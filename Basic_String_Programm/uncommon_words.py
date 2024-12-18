@@ -24,9 +24,35 @@ def uncommon_words(str1,str2):
         dict[word] = dict.get(word,0)+1
         
     return [ word  for word in dict if dict[word]==1]
+
+
+#Method 2 
+
+def uncommon_words1(str1,str2):
+    str1 = str1.split()
+    str2 = str2.split()
+    uncommon_words = []
+    
+    for word in str1:
+        if word not in str2:
+            uncommon_words.append(word) 
+            
+    for word in str2:
+        if word not in str1:
+            uncommon_words.append(word)          
+    return uncommon_words
+    
+    
+    
+    
+    
+    
+    
+    
     
  
  
 A = "Geeks for Geeks"
 B = "Learning from Geeks for Geeks"   
 print(uncommon_words(A,B))
+print(uncommon_words1(A,B))
