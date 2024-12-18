@@ -16,7 +16,4 @@ def word2num(str):
     num_list = [dict_word2num[x] for x in str.split()]
     return ''.join(num_list)
 str="zero four zero one"
-
-
-
 print(word2num(str))
