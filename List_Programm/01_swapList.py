@@ -6,8 +6,12 @@ def interchange_first_last(lst):
     return lst
 
 
-
+def interchange_first_last2(lst):
+    temp=lst[0],lst[-1]
+    lst[0],lst[-1] = temp
+    return lst
 
 
 lst = [0,1,2,3,4,5,6,7,8,9,10,11,12]
 print(interchange_first_last(lst))
+print(interchange_first_last2(lst))
