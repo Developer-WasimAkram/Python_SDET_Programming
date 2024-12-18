@@ -6,7 +6,7 @@ import re
 
 def word_location(string, word):
     string=string.split()
- 
+
     
     for idx in string:
         if len(re.findall(word, idx)) > 0:
@@ -14,6 +14,19 @@ def word_location(string, word):
            
     return res
     
-string='geeksforgeeks is best for geeks'
+def word_location2(string, word):
+    string=string.split() 
+    return string.index(word)+1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+string='geeksforgeeks is best for best geeks'
 word = 'best'
-print(word_location(string, word))
+print(f' Using Method 1 location of {word}' ,word_location(string, word))
+print(f' Using Method 2 location of {word}', word_location2(string, word))
